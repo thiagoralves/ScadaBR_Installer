@@ -51,7 +51,7 @@ echo -e " - Decompressing $tomcat"
 sudo tar xvf $tomcat
 echo -e " - Copying ScadaBR"
 sudo cp ${CURRENT_FOLDER}/ScadaBR.war /opt/tomcat6/apache-tomcat-6.0.53/webapps/
-echo -e "Changing Tomcat port to 9090"
+echo -e " - Changing Tomcat port to 9090"
 sudo cp ${CURRENT_FOLDER}/server.xml /opt/tomcat6/apache-tomcat-6.0.53/conf/
 echo -e " - Starting Tomcat6: /opt/tomcat6/apache-tomcat-6.0.53/bin/startup.sh"
 sudo /opt/tomcat6/apache-tomcat-6.0.53/bin/startup.sh
